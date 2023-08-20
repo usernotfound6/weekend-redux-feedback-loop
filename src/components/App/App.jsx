@@ -4,6 +4,7 @@ import './App.css';
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
 
 import Feeling from '../Feeling/Feeling';
+import Header from '../Header/Header';
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
             <Feeling />
           </Route>
             
-          <Route exact path="/understanding">
+          {/* <Route exact path="/understanding">
             <Header />
             <Understanding />
           </Route>
@@ -40,7 +41,7 @@ function App() {
           <Route exact path="/thanks">
             <Header />
             <Thanks />
-          </Route>
+          </Route> */}
       </Router>
     </div>
   );
