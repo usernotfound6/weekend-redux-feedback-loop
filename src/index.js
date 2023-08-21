@@ -32,7 +32,7 @@ const support = (state = 0, action) => {
     return state
 }
 
-const comment = (state = '', action) => {
+const comments = (state = '', action) => {
     if (action.type === 'ADD_COMMENT'){
         return action.payload;
     } 
@@ -54,7 +54,7 @@ const reduxStore = createStore(combineReducers ({
     feeling,
     understanding,
     support,
-    comment,
+    comments,
     feedbackObject,
 }), applyMiddleware(logger));
 
